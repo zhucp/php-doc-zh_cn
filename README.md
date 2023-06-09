@@ -1,3 +1,5 @@
+## 本仓库是本人自己进行中文翻译的PHP手册文档.因为官方翻译的地方很多是直翻,完全无法理解其意思.所以我用自己的,口语化的表达来再加工翻译.同时也能加深自己的PHP学习.
+
 # PHP 中文手册 
 
 [![Build](https://github.com/php/doc-zh/workflows/Build/badge.svg)](https://github.com/php/doc-zh/actions)
