@@ -34,10 +34,10 @@ If you only want to duplicate the anonymous functions, you can use [cloning](htt
 
 ### 参数 
 
-newThis
+`newThis`
 必需,绑定给匿名函数的一个对象，或者 null 来取消绑定。 
 
-newScope
+`newScope`
 可选,关联到匿名函数的类作用域，或者 'static' 保持当前状态。如果是一个对象，则使用这个对象的类型为新的类作用域。这会决定绑定的对象的 保护、私有成员 方法的可见性。不允许内部类（的对象）作为参数传递。 如果使用null,则会取消绑定
 
 
