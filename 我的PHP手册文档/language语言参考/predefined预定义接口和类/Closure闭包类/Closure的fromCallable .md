@@ -2,7 +2,7 @@
 
 (PHP 7 >= 7.1.0)
 
-Closure::fromCallable — Converts a callable into a closure ,将 callable 转换为闭包
+Closure::fromCallable — Converts a callable into a closure ,将 callable 转换为闭包,把一个可调用的类型(可能是具名函数)转为一个闭包类型.(具名函数变成匿名函数)
 
 -----------
 ### 说明
@@ -14,7 +14,7 @@ Create and return a new anonymous function from given callback using the current
 
 > **Note**:
 > 
-> 从 PHP 8.1.0 开始，First-class 可调用语法 的语义与此方法相同。
+> 从 PHP 8.1.0 开始，First-class 可调用语法 的语义与此方法相同。具体查看First-class 章节,这两个写法作用是一样的.
 
 -----------
 ### 参数
@@ -167,6 +167,7 @@ It seems that the result of the "fromCallable" behaves a little bit different th
     $cl1 = $cl1->bindTo($bob, 'A');  //给匿名函数绑定$this 和类作用域
     这一句:7.2就会报错Cannot rebind scope of closure created by ReflectionFunctionAbstract::getClosure()
     8.2 会报错:Cannot rebind scope of closure created from function
+    也就是说不能给一个从方法转化而来的闭包绑定类作用域,顶多只能绑定$this.这样限制的原因,暂时还找到官方的解释文档
       
     //This will retrieve: Uncaught Error: Cannot access private property A::$name  
     //这会导致:不能访问私有变量$name
