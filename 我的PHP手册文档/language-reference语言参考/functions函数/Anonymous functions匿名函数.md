@@ -1,4 +1,4 @@
-实例## 匿名函数
+## 匿名函数
 
 Anonymous functions, also known as `closures`, allow the creation of functions which have no specified name. They are most useful as the value of [callable](https://www.php.net/manual/en/language.types.callable.php) parameters, but they have many other uses.
 匿名函数（Anonymous functions），也叫闭包函数（closures），还可以叫做 lamda表达式(在java,c#,c++,python中),允许临时创建一个没有指定名称的函数。最经常用作回调函数 callable类型参数的值。当然，也有其它应用的情况。
